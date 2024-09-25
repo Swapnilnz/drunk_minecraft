@@ -1,0 +1,4 @@
+name: drunk_minecraft
+version: '1.0-SNAPSHOT'
+main: swapnil.b.drunk_minecraft.Drunk_minecraft
+api-version: '1.21'
