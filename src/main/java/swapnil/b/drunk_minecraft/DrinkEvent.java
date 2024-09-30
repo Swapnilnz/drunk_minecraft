@@ -117,7 +117,9 @@ public class DrinkEvent {
                 for (Player otherPlayer : getServer().getOnlinePlayers()) {
                     if (otherPlayer != player) {
                         otherPlayer.sendTitle(ChatColor.GOLD + "§lHave a Glug", msg, 10, 40, 10);
-                        DRINK_SCORES.get(otherPlayer.getUniqueId()).put(drinkType, DRINK_SCORES.get(otherPlayer.getUniqueId()).get(drinkType) + 1);
+                        DRINK_SCORES.get(otherPlayer.getUniqueId())
+                                .put(DrinkType.GLUG,
+                                        DRINK_SCORES.get(otherPlayer.getUniqueId()).get(DrinkType.GLUG) + 1);
                     }
                 }
                 player.sendTitle("", ChatColor.GREEN + drinkMap.get(type).message , 10, 40, 10);
